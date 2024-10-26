@@ -1,6 +1,8 @@
 
 .subscribe-bg{
     background-image: url('../../assets/bg-shadow.png');
+    background: linear-gradient(to right, #587ed1, #e0e8f1, #ebb42b);
+
     
 }
 
