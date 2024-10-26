@@ -1,0 +1,93 @@
+
+[
+    {
+        "id": 1,
+        "name": "Sachin Tendulkar",
+        "imageUrl": "https://i.ibb.co.com/44H342f/sachin-tendulkar3.jpg",
+        "nationality": "India",
+        "type": "Batter",
+        "batting": "Right-hand batter",
+        "bowling": "Right-arm spinner",
+        "price": 5000000
+    },
+    {
+        "id": 2,
+        "name": "Jacques Kallis",
+        "imageUrl": "https://i.ibb.co.com/dPPmSgB/kallis3.jpg",
+        "nationality": "South Africa",
+        "type": "Allrounder",
+        "batting": "Right-hand batter",
+        "bowling": "Right-arm fast",
+        "price": 4500000
+    },
+    {
+        "id": 3,
+        "name": "Ricky Ponting",
+        "imageUrl": "https://i.ibb.co.com/x8P4pzm/ponting.jpg",
+        "nationality": "Australia",
+        "type": "Batter",
+        "batting": "Right-hand batter",
+        "bowling": "Right-arm seamer",
+        "price": 4000000
+    },
+    {
+        "id": 4,
+        "name": "Kumar Sangakkara",
+        "imageUrl": "https://i.ibb.co.com/XZtpgz6/Kumar-Sangakkara1.jpg",
+        "nationality": "Sri Lanka",
+        "type": "WicketKeeper Batter",
+        "batting": "Left-hand batter",
+        "bowling": "Right-arm spinner",
+        "price": 4200000
+    },
+    {
+        "id": 5,
+        "name": "Shane Warne",
+        "imageUrl": "https://i.ibb.co.com/Gn5qQRF/shane-warne.jpg",
+        "nationality": "Australia",
+        "type": "Bowler",
+        "batting": "Right-hand batter",
+        "bowling": "Right-arm spinner",
+        "price": 4700000
+    },
+    {
+        "id": 6,
+        "name": "Brian Lara",
+        "imageUrl": "https://i.ibb.co.com/yWG3kmz/lara.jpg",
+        "nationality": "West Indies",
+        "type": "Batter",
+        "batting": "Left-hand batter",
+        "bowling": "Right-arm spinner",
+        "price": 4800000
+    },
+    {
+        "id": 7,
+        "name": "Wasim Akram",
+        "imageUrl": "https://i.ibb.co.com/8dN8Gxv/wasim.jpg",
+        "nationality": "Pakistan",
+        "type": "Bowler",
+        "batting": "Left-hand batter",
+        "bowling": "Left-arm fast",
+        "price": 4600000
+    },
+    {
+        "id": 8,
+        "name": "Mahela Jayawardene",
+        "imageUrl": "https://i.ibb.co.com/8cM5FyY/Mahela-Jayawardene.jpg",
+        "nationality": "Sri Lanka",
+        "type": "Batter",
+        "batting": "Right-hand batter",
+        "bowling": "Right-arm spinner",
+        "price": 4300000
+    },
+    {
+        "id": 9,
+        "name": "Andrew Flintoff",
+        "imageUrl": "https://i.ibb.co.com/Php8SbY/andrew-Flintoff.jpg",
+        "nationality": "England",
+        "type": "Allrounder",
+        "batting": "Right-hand batter",
+        "bowling": "Right-arm fast",
+        "price": 4500000
+    }
+]
