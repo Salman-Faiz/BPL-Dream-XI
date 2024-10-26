@@ -3,10 +3,11 @@ import { FaUserLarge } from 'react-icons/fa6'
 import { FaFlag } from 'react-icons/fa'
 import { useContext } from 'react'
 import { CricketersContext } from '../Context/Cricketers'
-import { Bounce, toast, ToastContainer } from 'react-toastify'
+import { Bounce, toast } from 'react-toastify'
 
 const PlayerCard = ({ player }) => {
-  const { selectedPlayers, setSelectedPlayers } = useContext(CricketersContext)
+  const { selectedPlayers, setSelectedPlayers, freeCredit, setFreeCredit } =
+    useContext(CricketersContext)
   const { id, name, imageUrl, nationality, type, batting, bowling, price } =
     player
 
@@ -16,37 +17,25 @@ const PlayerCard = ({ player }) => {
     const found = selectedPlayers.find(item => {
       return item.id === player.id
     })
-    if (!found ) {
-      if(selectedPlayers.length <6){
-       setSelectedPlayers([...selectedPlayers, player]) 
+    if (!found && freeCredit >= player.price) {
+      if (selectedPlayers.length < 6) {
+        setFreeCredit(freeCredit - player.price)
+        setSelectedPlayers([...selectedPlayers, player])
+        toast.success(`${player.name} is selected`, {
+          transition: Bounce,
+          theme: 'dark',
+        })
+      } else {
+        toast.error('You cannot select more than 6 players', {
+          transition: Bounce,
+          theme: 'dark',
+        })
       }
-      else( toast.error('You cannot select more than 6 players', {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-        transition: Bounce,
-      }))
-      
     } else {
-
-      toast.error(`${player.name}  has already been selected `, {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-        transition: Bounce,
-      })
-     
-      
+      toast.error(
+        `Do you have sufficient credit, or have you already selected ${player.name}?`,
+        { transition: Bounce, theme: 'dark' }
+      )
     }
   }
 
@@ -86,19 +75,6 @@ const PlayerCard = ({ player }) => {
           Choose player
         </button>
       </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-        transition={Bounce} 
-      />
     </div>
   )
 }

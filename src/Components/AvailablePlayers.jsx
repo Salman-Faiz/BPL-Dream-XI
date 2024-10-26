@@ -25,9 +25,9 @@ const AvailablePlayers = () => {
 
   // handle delete button
   const handleDeletePlayer = (event, itemId) => {
-    event.preventDefault()
+    event.preventDefault();
     const remainingPlayers = selectedPlayers.filter(item => {
-      return item.id !== itemId
+      return item.id !== itemId;
     })
     setSelectedPlayers([...remainingPlayers])
   }
@@ -87,7 +87,8 @@ const AvailablePlayers = () => {
                 <div className='flex-grow'>
                   <h2 className='text-xl font-bold'>{player.name}</h2>
                   <div className='text-md font-semibold '>
-                    <p>{player.batting}</p>
+                    <p>Role: {player.batting}</p>
+                    <p>Price: {player.price}</p>
                   </div>
                 </div>
                 <button

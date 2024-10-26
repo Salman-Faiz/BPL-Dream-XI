@@ -12,7 +12,7 @@ const Banner = () => {
     const addMoney = 5000000
     setFreeCredit(prevMoney => {
       const updatedCredit = prevMoney + addMoney
-      toast.success('Credit added successfully', {
+      toast.success('Free Credit added successfully', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -43,19 +43,7 @@ const Banner = () => {
         </button>
       </div>
       
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-        transition={Bounce} 
-      />
+  
     </div>
   )
 }

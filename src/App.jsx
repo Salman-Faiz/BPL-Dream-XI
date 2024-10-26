@@ -4,6 +4,7 @@ import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import { CricketersContext } from "./Context/Cricketers";
+import { Bounce, ToastContainer } from "react-toastify";
 
 
 
@@ -22,6 +23,19 @@ const App = () => {
       </div>
       <Footer />
     </div>
+    <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce} 
+      />
     
     </CricketersContext.Provider>
     </>
